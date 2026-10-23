@@ -1,0 +1,17 @@
+import java.util.Scanner;
+ 
+public class get_adverbs {
+ 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String adverb = get_adverb(scanner);
+        System.out.println("You entered the adverb: " + adverb);
+        scanner.close();
+    }
+ 
+    public static String get_adverb(Scanner scanner) {
+        System.out.print("Enter an adverb: ");
+        String adverbInput = scanner.nextLine();
+        return adverbInput;
+    }
+}
