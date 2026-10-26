@@ -1,17 +1,25 @@
-import java.util.Scanner;
- 
+import java.util.Scanner; 
+
+// Asks the user for an adverb and prints it back
 public class get_adverbs {
- 
+
     public static void main(String[] args) {
+        // Create a Scanner to read input from the keyboard
         Scanner scanner = new Scanner(System.in);
+
+        // Call get_adverb to ask for an adverb, then save it in adverb
         String adverb = get_adverb(scanner);
+
+        // Print the adverb the user typed
         System.out.println("You entered the adverb: " + adverb);
+
         scanner.close();
     }
- 
+
+    // Asks the user for one adverb and returns it to main
     public static String get_adverb(Scanner scanner) {
         System.out.print("Enter an adverb: ");
-        String adverbInput = scanner.nextLine();
-        return adverbInput;
+        String adverbInput = scanner.nextLine(); // Read the whole line the user types
+        return adverbInput; // Send the adverb back to main
     }
 }
